@@ -3,12 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		63A5862E62C7BC9739B5A01E /* Pods_VIPERTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50B59673B67DA37450091CA /* Pods_VIPERTests.framework */; };
 		BBE78379F3B978FADB9205AF /* Pods_VIPER_VIPERUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE86A74E242805F8B80292A /* Pods_VIPER_VIPERUITests.framework */; };
+		EA1ACCE5263BB503008A22E3 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1ACCE4263BB503008A22E3 /* TabBarViewController.swift */; };
+		EA1ACCEF263BBCE0008A22E3 /* UserProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1ACCEE263BBCE0008A22E3 /* UserProtocols.swift */; };
+		EA1ACCF8263BBE4D008A22E3 /* ErrorCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1ACCF7263BBE4D008A22E3 /* ErrorCases.swift */; };
+		EA1ACCFD263BC721008A22E3 /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1ACCFC263BC721008A22E3 /* UsersTableViewCell.swift */; };
+		EA1ACD1C263BCAAD008A22E3 /* UsersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1ACD1A263BCAAD008A22E3 /* UsersTableViewCell.xib */; };
 		EA6D894D263B9A1600953277 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6D894C263B9A1600953277 /* AppDelegate.swift */; };
 		EA6D894F263B9A1600953277 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6D894E263B9A1600953277 /* SceneDelegate.swift */; };
 		EA6D8954263B9A1600953277 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA6D8952263B9A1600953277 /* Main.storyboard */; };
@@ -50,6 +55,11 @@
 		5AE86A74E242805F8B80292A /* Pods_VIPER_VIPERUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPER_VIPERUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ECEAC4FC2991B4BC09F1BF5 /* Pods-VIPER.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER.debug.xcconfig"; path = "Target Support Files/Pods-VIPER/Pods-VIPER.debug.xcconfig"; sourceTree = "<group>"; };
 		A819E1FD8242BFDD8FB3D0FC /* Pods-VIPER-VIPERUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER-VIPERUITests.release.xcconfig"; path = "Target Support Files/Pods-VIPER-VIPERUITests/Pods-VIPER-VIPERUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EA1ACCE4263BB503008A22E3 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		EA1ACCEE263BBCE0008A22E3 /* UserProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProtocols.swift; sourceTree = "<group>"; };
+		EA1ACCF7263BBE4D008A22E3 /* ErrorCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorCases.swift; sourceTree = "<group>"; };
+		EA1ACCFC263BC721008A22E3 /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
+		EA1ACD1A263BCAAD008A22E3 /* UsersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsersTableViewCell.xib; sourceTree = "<group>"; };
 		EA6D8949263B9A1600953277 /* VIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA6D894C263B9A1600953277 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA6D894E263B9A1600953277 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,8 +131,52 @@
 				0E1E34DA43452A4F40581F72 /* Pods-VIPERTests.debug.xcconfig */,
 				54502A5CDBFDBFF1E30B9A64 /* Pods-VIPERTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		EA1ACD26263BCC34008A22E3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EA1ACCFC263BC721008A22E3 /* UsersTableViewCell.swift */,
+				EA1ACD1A263BCAAD008A22E3 /* UsersTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EA1ACD2A263BCC4B008A22E3 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EA6D8955263B9A1600953277 /* VIPER.xcdatamodeld */,
+				EA6D894C263B9A1600953277 /* AppDelegate.swift */,
+				EA6D894E263B9A1600953277 /* SceneDelegate.swift */,
+				EA1ACCE4263BB503008A22E3 /* TabBarViewController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		EA1ACD2E263BCC5A008A22E3 /* UsersScene */ = {
+			isa = PBXGroup;
+			children = (
+				EA6D8991263B9A6800953277 /* View.swift */,
+				EA6D8982263B9A3700953277 /* Interactor.swift */,
+				EA6D898C263B9A5E00953277 /* Presenter.swift */,
+				EA6D8987263B9A4600953277 /* Entity.swift */,
+				EA6D8996263B9A8C00953277 /* Router.swift */,
+				EA1ACCEE263BBCE0008A22E3 /* UserProtocols.swift */,
+				EA1ACCF7263BBE4D008A22E3 /* ErrorCases.swift */,
+				EA1ACD26263BCC34008A22E3 /* Cell */,
+			);
+			path = UsersScene;
+			sourceTree = "<group>";
+		};
+		EA1ACD35263BCC9C008A22E3 /* StoryboardView */ = {
+			isa = PBXGroup;
+			children = (
+				EA6D8952263B9A1600953277 /* Main.storyboard */,
+				EA6D8958263B9A1700953277 /* Assets.xcassets */,
+				EA6D895A263B9A1700953277 /* LaunchScreen.storyboard */,
+			);
+			path = StoryboardView;
 			sourceTree = "<group>";
 		};
 		EA6D8940263B9A1600953277 = {
@@ -150,14 +204,10 @@
 		EA6D894B263B9A1600953277 /* VIPER */ = {
 			isa = PBXGroup;
 			children = (
-				EA6D894C263B9A1600953277 /* AppDelegate.swift */,
-				EA6D894E263B9A1600953277 /* SceneDelegate.swift */,
-				EA6D899B263B9C3A00953277 /* Scene */,
-				EA6D8952263B9A1600953277 /* Main.storyboard */,
-				EA6D8958263B9A1700953277 /* Assets.xcassets */,
-				EA6D895A263B9A1700953277 /* LaunchScreen.storyboard */,
+				EA1ACD2A263BCC4B008A22E3 /* Core */,
+				EA6D899B263B9C3A00953277 /* Scenes */,
+				EA1ACD35263BCC9C008A22E3 /* StoryboardView */,
 				EA6D895D263B9A1700953277 /* Info.plist */,
-				EA6D8955263B9A1600953277 /* VIPER.xcdatamodeld */,
 			);
 			path = VIPER;
 			sourceTree = "<group>";
@@ -180,16 +230,12 @@
 			path = VIPERUITests;
 			sourceTree = "<group>";
 		};
-		EA6D899B263B9C3A00953277 /* Scene */ = {
+		EA6D899B263B9C3A00953277 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				EA6D8982263B9A3700953277 /* Interactor.swift */,
-				EA6D8987263B9A4600953277 /* Entity.swift */,
-				EA6D898C263B9A5E00953277 /* Presenter.swift */,
-				EA6D8991263B9A6800953277 /* View.swift */,
-				EA6D8996263B9A8C00953277 /* Router.swift */,
+				EA1ACD2E263BCC5A008A22E3 /* UsersScene */,
 			);
-			path = Scene;
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,6 +349,7 @@
 				EA6D895C263B9A1700953277 /* LaunchScreen.storyboard in Resources */,
 				EA6D8959263B9A1700953277 /* Assets.xcassets in Resources */,
 				EA6D8954263B9A1600953277 /* Main.storyboard in Resources */,
+				EA1ACD1C263BCAAD008A22E3 /* UsersTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,7 +481,11 @@
 				EA6D8957263B9A1600953277 /* VIPER.xcdatamodeld in Sources */,
 				EA6D898D263B9A5E00953277 /* Presenter.swift in Sources */,
 				EA6D8997263B9A8C00953277 /* Router.swift in Sources */,
+				EA1ACCFD263BC721008A22E3 /* UsersTableViewCell.swift in Sources */,
+				EA1ACCE5263BB503008A22E3 /* TabBarViewController.swift in Sources */,
 				EA6D8988263B9A4600953277 /* Entity.swift in Sources */,
+				EA1ACCEF263BBCE0008A22E3 /* UserProtocols.swift in Sources */,
+				EA1ACCF8263BBE4D008A22E3 /* ErrorCases.swift in Sources */,
 				EA6D8983263B9A3700953277 /* Interactor.swift in Sources */,
 				EA6D894D263B9A1600953277 /* AppDelegate.swift in Sources */,
 				EA6D894F263B9A1600953277 /* SceneDelegate.swift in Sources */,

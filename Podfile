@@ -7,6 +7,7 @@ target 'VIPER' do
 
   # Pods for VIPER
   pod 'Alamofire', '~> 5.2'
+  pod 'Kingfisher', '~> 5.15.8'
 
 
   target 'VIPERTests' do
