@@ -8,7 +8,9 @@ target 'VIPER' do
   # Pods for VIPER
   pod 'Alamofire', '~> 5.2'
   pod 'Kingfisher', '~> 5.15.8'
-
+  pod 'SwiftLint'
+  pod 'JGProgressHUD'
+  pod 'IQKeyboardManagerSwift'
 
   target 'VIPERTests' do
     inherit! :search_paths

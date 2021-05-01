@@ -10,10 +10,11 @@
 		63A5862E62C7BC9739B5A01E /* Pods_VIPERTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50B59673B67DA37450091CA /* Pods_VIPERTests.framework */; };
 		BBE78379F3B978FADB9205AF /* Pods_VIPER_VIPERUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE86A74E242805F8B80292A /* Pods_VIPER_VIPERUITests.framework */; };
 		EA1ACCE5263BB503008A22E3 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1ACCE4263BB503008A22E3 /* TabBarViewController.swift */; };
-		EA1ACCEF263BBCE0008A22E3 /* UserProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1ACCEE263BBCE0008A22E3 /* UserProtocols.swift */; };
-		EA1ACCF8263BBE4D008A22E3 /* ErrorCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1ACCF7263BBE4D008A22E3 /* ErrorCases.swift */; };
-		EA1ACCFD263BC721008A22E3 /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1ACCFC263BC721008A22E3 /* UsersTableViewCell.swift */; };
-		EA1ACD1C263BCAAD008A22E3 /* UsersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1ACD1A263BCAAD008A22E3 /* UsersTableViewCell.xib */; };
+		EA1ACCEF263BBCE0008A22E3 /* MVProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1ACCEE263BBCE0008A22E3 /* MVProtocols.swift */; };
+		EA1ACCFD263BC721008A22E3 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1ACCFC263BC721008A22E3 /* MovieTableViewCell.swift */; };
+		EA4FE58D263CCF680062C4D2 /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4FE58C263CCF680062C4D2 /* RequestInterceptor.swift */; };
+		EA4FE58F263CCF760062C4D2 /* RequestLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4FE58E263CCF760062C4D2 /* RequestLogger.swift */; };
+		EA4FE591263CCFB00062C4D2 /* APIcaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4FE590263CCFB00062C4D2 /* APIcaller.swift */; };
 		EA6D894D263B9A1600953277 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6D894C263B9A1600953277 /* AppDelegate.swift */; };
 		EA6D894F263B9A1600953277 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6D894E263B9A1600953277 /* SceneDelegate.swift */; };
 		EA6D8954263B9A1600953277 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA6D8952263B9A1600953277 /* Main.storyboard */; };
@@ -22,11 +23,13 @@
 		EA6D895C263B9A1700953277 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA6D895A263B9A1700953277 /* LaunchScreen.storyboard */; };
 		EA6D8967263B9A1800953277 /* VIPERTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6D8966263B9A1800953277 /* VIPERTests.swift */; };
 		EA6D8972263B9A1800953277 /* VIPERUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6D8971263B9A1800953277 /* VIPERUITests.swift */; };
-		EA6D8983263B9A3700953277 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6D8982263B9A3700953277 /* Interactor.swift */; };
-		EA6D8988263B9A4600953277 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6D8987263B9A4600953277 /* Entity.swift */; };
-		EA6D898D263B9A5E00953277 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6D898C263B9A5E00953277 /* Presenter.swift */; };
-		EA6D8992263B9A6800953277 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6D8991263B9A6800953277 /* View.swift */; };
-		EA6D8997263B9A8C00953277 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6D8996263B9A8C00953277 /* Router.swift */; };
+		EA6D8983263B9A3700953277 /* MVInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6D8982263B9A3700953277 /* MVInteractor.swift */; };
+		EA6D8988263B9A4600953277 /* MVEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6D8987263B9A4600953277 /* MVEntity.swift */; };
+		EA6D898D263B9A5E00953277 /* MVPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6D898C263B9A5E00953277 /* MVPresenter.swift */; };
+		EA6D8992263B9A6800953277 /* MVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6D8991263B9A6800953277 /* MVView.swift */; };
+		EA6D8997263B9A8C00953277 /* MVRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6D8996263B9A8C00953277 /* MVRouter.swift */; };
+		EABEC49F263CD45B00DF9A7B /* RequestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABEC49E263CD45B00DF9A7B /* RequestRouter.swift */; };
+		EABEC4A3263CDC2100DF9A7B /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EABEC4A1263CDC2100DF9A7B /* MovieTableViewCell.xib */; };
 		ED675DAB646288D4156A1891 /* Pods_VIPER.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F2AA69C49EB408D4E93173F /* Pods_VIPER.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,10 +59,11 @@
 		9ECEAC4FC2991B4BC09F1BF5 /* Pods-VIPER.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER.debug.xcconfig"; path = "Target Support Files/Pods-VIPER/Pods-VIPER.debug.xcconfig"; sourceTree = "<group>"; };
 		A819E1FD8242BFDD8FB3D0FC /* Pods-VIPER-VIPERUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER-VIPERUITests.release.xcconfig"; path = "Target Support Files/Pods-VIPER-VIPERUITests/Pods-VIPER-VIPERUITests.release.xcconfig"; sourceTree = "<group>"; };
 		EA1ACCE4263BB503008A22E3 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		EA1ACCEE263BBCE0008A22E3 /* UserProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProtocols.swift; sourceTree = "<group>"; };
-		EA1ACCF7263BBE4D008A22E3 /* ErrorCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorCases.swift; sourceTree = "<group>"; };
-		EA1ACCFC263BC721008A22E3 /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
-		EA1ACD1A263BCAAD008A22E3 /* UsersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsersTableViewCell.xib; sourceTree = "<group>"; };
+		EA1ACCEE263BBCE0008A22E3 /* MVProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVProtocols.swift; sourceTree = "<group>"; };
+		EA1ACCFC263BC721008A22E3 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		EA4FE58C263CCF680062C4D2 /* RequestInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestInterceptor.swift; sourceTree = "<group>"; };
+		EA4FE58E263CCF760062C4D2 /* RequestLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestLogger.swift; sourceTree = "<group>"; };
+		EA4FE590263CCFB00062C4D2 /* APIcaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIcaller.swift; sourceTree = "<group>"; };
 		EA6D8949263B9A1600953277 /* VIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA6D894C263B9A1600953277 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA6D894E263B9A1600953277 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,11 +78,13 @@
 		EA6D896D263B9A1800953277 /* VIPERUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VIPERUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA6D8971263B9A1800953277 /* VIPERUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERUITests.swift; sourceTree = "<group>"; };
 		EA6D8973263B9A1800953277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EA6D8982263B9A3700953277 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
-		EA6D8987263B9A4600953277 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
-		EA6D898C263B9A5E00953277 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
-		EA6D8991263B9A6800953277 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
-		EA6D8996263B9A8C00953277 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		EA6D8982263B9A3700953277 /* MVInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVInteractor.swift; sourceTree = "<group>"; };
+		EA6D8987263B9A4600953277 /* MVEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVEntity.swift; sourceTree = "<group>"; };
+		EA6D898C263B9A5E00953277 /* MVPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPresenter.swift; sourceTree = "<group>"; };
+		EA6D8991263B9A6800953277 /* MVView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVView.swift; sourceTree = "<group>"; };
+		EA6D8996263B9A8C00953277 /* MVRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVRouter.swift; sourceTree = "<group>"; };
+		EABEC49E263CD45B00DF9A7B /* RequestRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestRouter.swift; sourceTree = "<group>"; };
+		EABEC4A1263CDC2100DF9A7B /* MovieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
 		F50B59673B67DA37450091CA /* Pods_VIPERTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPERTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7AAF6894E1B5A5D99F5552A /* Pods-VIPER-VIPERUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER-VIPERUITests.debug.xcconfig"; path = "Target Support Files/Pods-VIPER-VIPERUITests/Pods-VIPER-VIPERUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -134,49 +140,59 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		EA1ACD26263BCC34008A22E3 /* Cell */ = {
+		EA1ACD26263BCC34008A22E3 /* CustomCell */ = {
 			isa = PBXGroup;
 			children = (
-				EA1ACCFC263BC721008A22E3 /* UsersTableViewCell.swift */,
-				EA1ACD1A263BCAAD008A22E3 /* UsersTableViewCell.xib */,
+				EA1ACCFC263BC721008A22E3 /* MovieTableViewCell.swift */,
+				EABEC4A1263CDC2100DF9A7B /* MovieTableViewCell.xib */,
 			);
-			path = Cell;
+			path = CustomCell;
 			sourceTree = "<group>";
 		};
 		EA1ACD2A263BCC4B008A22E3 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				EA6D8955263B9A1600953277 /* VIPER.xcdatamodeld */,
 				EA6D894C263B9A1600953277 /* AppDelegate.swift */,
 				EA6D894E263B9A1600953277 /* SceneDelegate.swift */,
+				EA6D8955263B9A1600953277 /* VIPER.xcdatamodeld */,
 				EA1ACCE4263BB503008A22E3 /* TabBarViewController.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
 		};
-		EA1ACD2E263BCC5A008A22E3 /* UsersScene */ = {
-			isa = PBXGroup;
-			children = (
-				EA6D8991263B9A6800953277 /* View.swift */,
-				EA6D8982263B9A3700953277 /* Interactor.swift */,
-				EA6D898C263B9A5E00953277 /* Presenter.swift */,
-				EA6D8987263B9A4600953277 /* Entity.swift */,
-				EA6D8996263B9A8C00953277 /* Router.swift */,
-				EA1ACCEE263BBCE0008A22E3 /* UserProtocols.swift */,
-				EA1ACCF7263BBE4D008A22E3 /* ErrorCases.swift */,
-				EA1ACD26263BCC34008A22E3 /* Cell */,
-			);
-			path = UsersScene;
-			sourceTree = "<group>";
-		};
-		EA1ACD35263BCC9C008A22E3 /* StoryboardView */ = {
+		EA1ACD2E263BCC5A008A22E3 /* MoviesScene */ = {
 			isa = PBXGroup;
 			children = (
 				EA6D8952263B9A1600953277 /* Main.storyboard */,
+				EA6D8991263B9A6800953277 /* MVView.swift */,
+				EA6D8982263B9A3700953277 /* MVInteractor.swift */,
+				EA6D898C263B9A5E00953277 /* MVPresenter.swift */,
+				EA6D8987263B9A4600953277 /* MVEntity.swift */,
+				EA6D8996263B9A8C00953277 /* MVRouter.swift */,
+				EA1ACCEE263BBCE0008A22E3 /* MVProtocols.swift */,
+				EA1ACD26263BCC34008A22E3 /* CustomCell */,
+			);
+			path = MoviesScene;
+			sourceTree = "<group>";
+		};
+		EA1ACD35263BCC9C008A22E3 /* Recources */ = {
+			isa = PBXGroup;
+			children = (
 				EA6D8958263B9A1700953277 /* Assets.xcassets */,
 				EA6D895A263B9A1700953277 /* LaunchScreen.storyboard */,
 			);
-			path = StoryboardView;
+			path = Recources;
+			sourceTree = "<group>";
+		};
+		EA4FE58B263CCF510062C4D2 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				EA4FE590263CCFB00062C4D2 /* APIcaller.swift */,
+				EABEC49E263CD45B00DF9A7B /* RequestRouter.swift */,
+				EA4FE58C263CCF680062C4D2 /* RequestInterceptor.swift */,
+				EA4FE58E263CCF760062C4D2 /* RequestLogger.swift */,
+			);
+			path = NetworkLayer;
 			sourceTree = "<group>";
 		};
 		EA6D8940263B9A1600953277 = {
@@ -205,8 +221,9 @@
 			isa = PBXGroup;
 			children = (
 				EA1ACD2A263BCC4B008A22E3 /* Core */,
+				EA1ACD35263BCC9C008A22E3 /* Recources */,
 				EA6D899B263B9C3A00953277 /* Scenes */,
-				EA1ACD35263BCC9C008A22E3 /* StoryboardView */,
+				EA4FE58B263CCF510062C4D2 /* NetworkLayer */,
 				EA6D895D263B9A1700953277 /* Info.plist */,
 			);
 			path = VIPER;
@@ -233,7 +250,7 @@
 		EA6D899B263B9C3A00953277 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				EA1ACD2E263BCC5A008A22E3 /* UsersScene */,
+				EA1ACD2E263BCC5A008A22E3 /* MoviesScene */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -250,6 +267,7 @@
 				EA6D8946263B9A1600953277 /* Frameworks */,
 				EA6D8947263B9A1600953277 /* Resources */,
 				5C62850C2F53C69C3C823F52 /* [CP] Embed Pods Frameworks */,
+				EABEC4A4263CFA4100DF9A7B /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -347,9 +365,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA6D895C263B9A1700953277 /* LaunchScreen.storyboard in Resources */,
+				EABEC4A3263CDC2100DF9A7B /* MovieTableViewCell.xib in Resources */,
 				EA6D8959263B9A1700953277 /* Assets.xcassets in Resources */,
 				EA6D8954263B9A1600953277 /* Main.storyboard in Resources */,
-				EA1ACD1C263BCAAD008A22E3 /* UsersTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +488,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		EABEC4A4263CFA4100DF9A7B /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -477,18 +513,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA6D8992263B9A6800953277 /* View.swift in Sources */,
+				EA6D8992263B9A6800953277 /* MVView.swift in Sources */,
 				EA6D8957263B9A1600953277 /* VIPER.xcdatamodeld in Sources */,
-				EA6D898D263B9A5E00953277 /* Presenter.swift in Sources */,
-				EA6D8997263B9A8C00953277 /* Router.swift in Sources */,
-				EA1ACCFD263BC721008A22E3 /* UsersTableViewCell.swift in Sources */,
+				EA6D898D263B9A5E00953277 /* MVPresenter.swift in Sources */,
+				EA4FE58F263CCF760062C4D2 /* RequestLogger.swift in Sources */,
+				EA4FE591263CCFB00062C4D2 /* APIcaller.swift in Sources */,
+				EA6D8997263B9A8C00953277 /* MVRouter.swift in Sources */,
+				EA1ACCFD263BC721008A22E3 /* MovieTableViewCell.swift in Sources */,
 				EA1ACCE5263BB503008A22E3 /* TabBarViewController.swift in Sources */,
-				EA6D8988263B9A4600953277 /* Entity.swift in Sources */,
-				EA1ACCEF263BBCE0008A22E3 /* UserProtocols.swift in Sources */,
-				EA1ACCF8263BBE4D008A22E3 /* ErrorCases.swift in Sources */,
-				EA6D8983263B9A3700953277 /* Interactor.swift in Sources */,
+				EA6D8988263B9A4600953277 /* MVEntity.swift in Sources */,
+				EABEC49F263CD45B00DF9A7B /* RequestRouter.swift in Sources */,
+				EA1ACCEF263BBCE0008A22E3 /* MVProtocols.swift in Sources */,
+				EA6D8983263B9A3700953277 /* MVInteractor.swift in Sources */,
 				EA6D894D263B9A1600953277 /* AppDelegate.swift in Sources */,
 				EA6D894F263B9A1600953277 /* SceneDelegate.swift in Sources */,
+				EA4FE58D263CCF680062C4D2 /* RequestInterceptor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
