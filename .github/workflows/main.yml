@@ -14,7 +14,7 @@ jobs:
   build: # make sure build/ci work properly
   
     runs-on: macOS-latest
-    
+    timeout-minutes: 30
     steps:
       - name: checkout
       - uses: actions/checkout@v1
