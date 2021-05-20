@@ -24,10 +24,28 @@ jobs:
   # You may pin to the exact commit or the version.
   # uses: norio-nomura/action-swiftlint@9f4dcd7fd46b4e75d7935cf2f4df406d5cae3684
       uses: norio-nomura/action-swiftlint@3.2.1
-
-    - name: Generate Build Number
-      id: buildnumber
-      uses: einaregilsson/build-number@v2
+      
+  # Cache and Dependencies.
+    - name: cache Pods
+      uses: actions/cache@v2
       with:
-        token: ${{ secrets.github_token }}
-    - run: ./Build
+       path: Pods
+       key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
+       restore-keys: |
+         ${{ runner.os }}-pods-
+         
+    - name: cache Carthage Frameworks
+      uses: actions/cache@v2
+      with:
+       path: Carthage
+       key: ${{ runner.os }}-carthage-${{ hashFiles('**/Cartfile.resolved') }}
+       restore-keys: |
+         ${{ runner.os }}-carthage-
+         
+    - name: cache SwiftPackageManger Frameworks
+      uses: actions/cache@v2
+      with:
+       path: .build
+       key: ${{ runner.os }}-spm-${{ hashFiles('**/Package.resolved') }}
+       restore-keys: |
+         ${{ runner.os }}-spm-     
